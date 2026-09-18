@@ -1,0 +1,60 @@
+{
+  "manifest_version": "0.3",
+  "name": "tally-mcp",
+  "display_name": "TallyPrime Connector",
+  "version": "1.0.0",
+  "description": "Connect Claude to your TallyPrime books (read-only).",
+  "long_description": "Lets Claude read ledgers, balances, trial balance, stock summary and day book from a running TallyPrime / Tally.ERP 9 through Tally's built-in XML gateway. Strictly read-only: it never creates, alters or deletes anything in Tally. Data stays on your PC and goes only between Tally and Claude.\n\nBefore use: open TallyPrime with a company loaded and enable the gateway — F1 (Help) > Settings > Connectivity > Client/Server configuration > 'TallyPrime acts as' = Both, Port = 9000.",
+  "author": { "name": "Sj" },
+  "license": "MIT",
+  "keywords": ["tally", "tallyprime", "accounting", "erp", "india", "gst"],
+  "server": {
+    "type": "node",
+    "entry_point": "server/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": ["${__dirname}/server/index.js"],
+      "env": {
+        "TALLY_URL": "${user_config.tally_url}",
+        "TALLY_COMPANY": "${user_config.tally_company}",
+        "TALLY_TIMEOUT": "${user_config.tally_timeout}"
+      }
+    }
+  },
+  "tools": [
+    { "name": "tally_status", "description": "Check that Claude can reach Tally" },
+    { "name": "list_companies", "description": "Companies currently open in Tally" },
+    { "name": "list_ledgers", "description": "All ledgers with group and closing balance" },
+    { "name": "get_ledger_balance", "description": "Opening and closing balance for one ledger" },
+    { "name": "get_trial_balance", "description": "Flat trial balance of every ledger" },
+    { "name": "get_stock_summary", "description": "Stock items with closing quantity and value" },
+    { "name": "get_day_book", "description": "Vouchers between two dates" }
+  ],
+  "user_config": {
+    "tally_url": {
+      "type": "string",
+      "title": "Tally gateway URL",
+      "description": "Leave as is unless you changed Tally's port or Tally runs on another PC.",
+      "default": "http://localhost:9000",
+      "required": false
+    },
+    "tally_company": {
+      "type": "string",
+      "title": "Company name (optional)",
+      "description": "Exact company name to lock to. Leave blank to use whichever company is open in Tally.",
+      "default": "",
+      "required": false
+    },
+    "tally_timeout": {
+      "type": "number",
+      "title": "Timeout (seconds)",
+      "description": "Increase for very large companies.",
+      "default": 60,
+      "required": false
+    }
+  },
+  "compatibility": {
+    "platforms": ["win32", "darwin", "linux"],
+    "runtimes": { "node": ">=18.0.0" }
+  }
+}
