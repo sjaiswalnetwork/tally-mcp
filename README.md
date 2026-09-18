@@ -11,7 +11,7 @@ Free. Read-only. Your data never leaves your computer.
 
 ### [⬇️ Click to download TallyPrime-Connector.mcpb](https://github.com/sjaiswalnetwork/tally-mcp/releases/latest/download/TallyPrime-Connector.mcpb)
 
-That is the only file you need. After it downloads, follow the 3 steps below.
+That is the only file you need. After it downloads, follow the 3 steps below. **Do not double-click it yet**, Step 2 shows the right way to install it.
 
 If your browser shows a warning like *"This file is not commonly downloaded"*, click **Keep** or **Keep anyway**. The file is safe, it is a small Claude add-on and does not change anything on your computer.
 
@@ -60,12 +60,19 @@ If you see the words **"TallyPrime Server is Running"**, Step 1 is done. 🎉
 
 ### Step 2: Install the connector
 
-1. Open your **Downloads** folder.
-2. Find the file **TallyPrime-Connector.mcpb** (the one you downloaded from the link at the top).
-3. **Double-click** it.
-4. Claude Desktop opens and shows an **Install** button. Click **Install**.
+1. Open **Claude Desktop**.
+2. Click the **menu** (three lines, top-left) or the **gear icon**, then click **Settings**.
+3. Click **Extensions** in the left list.
+4. Click **Advanced settings** (near the bottom of the page).
+5. Click **Install Extension...**
+6. Find the file **TallyPrime-Connector.mcpb** in your **Downloads** folder and click **Open**.
+7. Click **Install**.
 
 Done. You do not need to type anything or change any settings.
+
+**Another way:** open the Extensions page in Claude Desktop and simply **drag the file** from your Downloads folder onto that page.
+
+**Tip:** on some PCs you can also just double-click the file. If Windows asks *"Select an app to open this .mcpb file"*, press **Esc** and use the steps above instead. Do not pick Notepad or any other app.
 
 ### Step 3: Try it
 
@@ -104,8 +111,11 @@ One of these is the reason:
 **Claude gives an empty answer.**
 Your company has no data for that question. Try a different question or date range.
 
-**Claude Desktop did not open when I double-clicked the file.**
-Install Claude Desktop first from [claude.ai/download](https://claude.ai/download), then double-click the file again.
+**Windows asks "Select an app to open this .mcpb file".**
+Press Esc. Do not pick Notepad or any other app. Install it from inside Claude Desktop instead: Settings > Extensions > Advanced settings > Install Extension... and choose the file.
+
+**I can't find Extensions in Claude Desktop.**
+Make sure you have the Claude Desktop app from [claude.ai/download](https://claude.ai/download), not the website in a browser. Extensions only exist in the desktop app.
 
 ---
 
