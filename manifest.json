@@ -7,6 +7,7 @@
   "long_description": "Lets Claude read ledgers, balances, trial balance, stock summary and day book from a running TallyPrime / Tally.ERP 9 through Tally's built-in XML gateway. Strictly read-only: it never creates, alters or deletes anything in Tally. Data stays on your PC and goes only between Tally and Claude.\n\nBefore use: open TallyPrime with a company loaded and enable the gateway — F1 (Help) > Settings > Connectivity > Client/Server configuration > 'TallyPrime acts as' = Both, Port = 9000.",
   "author": { "name": "Sj" },
   "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/sjaiswalnetwork/tally-mcp" },
   "keywords": ["tally", "tallyprime", "accounting", "erp", "india", "gst"],
   "server": {
     "type": "node",
