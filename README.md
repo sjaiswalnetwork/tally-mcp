@@ -1,61 +1,83 @@
 # TallyPrime Connector for Claude
 
-One-click, **read-only** connection between Claude Desktop and TallyPrime / Tally.ERP 9.
-No Python, no config files. Your data stays on your PC.
+**Ask Claude questions about your Tally accounts, in plain English or Hindi.**
+Free. Read-only. Your data never leaves your computer.
 
 **Made by Shashank** ([sjaiswalnetwork](https://github.com/sjaiswalnetwork)).
 
 ---
 
-## What this is, in one minute
+## 👉 Download here (one click)
 
-Tally is the software where your shop or company keeps its accounts. Claude is an AI you can chat with on your computer. Normally Claude cannot see what is inside Tally.
+### [⬇️ Click to download TallyPrime-Connector.mcpb](https://github.com/sjaiswalnetwork/tally-mcp/releases/download/v1.0.0/TallyPrime-Connector.mcpb)
 
-The TallyPrime Connector is a small bridge between the two. Once it is installed, you can ask Claude questions in normal language, like *"How much does Sharma Traders owe us?"* or *"What did we sell last week?"*, and Claude reads the answer straight out of your Tally.
+That is the only file you need. After it downloads, follow the 3 steps below.
 
-Three things to know so you feel safe:
+If your browser shows a warning like *"This file is not commonly downloaded"*, click **Keep** or **Keep anyway**. The file is safe, it is a small Claude add-on and does not change anything on your computer.
 
-- **It can only read.** It can never add, change or delete anything in Tally. Think of it as a window, not a door.
-- **Nothing leaves your computer.** Tally and Claude talk to each other inside your own PC.
-- **It is free and open.** Anyone can download it from the link below.
+---
 
-## Who can use it
+## What is this?
 
-Anyone who has these two things on a Windows PC:
+Tally is where your shop or company keeps its accounts. Claude is an AI you can chat with on your computer.
 
-1. TallyPrime (or the older Tally.ERP 9) with a company opened in it.
-2. The Claude Desktop app, a free download from [claude.ai/download](https://claude.ai/download).
+This connector lets Claude look inside your Tally so you can simply ask things like:
 
-No coding, no typing commands, nothing to configure.
+- *"How much does Sharma Traders owe us?"*
+- *"What is my cash balance today?"*
+- *"Show me all bills from last month."*
 
-## Install in 4 easy steps
+Three things so you feel safe:
 
-### Step 1. Tell Tally it is allowed to talk (only once)
+- **It can only read.** It can never add, change or delete anything in Tally.
+- **Nothing goes to the internet.** Tally and Claude talk to each other inside your own PC.
+- **It is free.** Made by Shashank, for anyone.
+
+---
+
+## Before you start, you need two things
+
+1. **Tally** on your PC (TallyPrime or Tally.ERP 9), with your company opened.
+2. **Claude Desktop** on your PC. Don't have it? Get it free here: **[claude.ai/download](https://claude.ai/download)**. Install it like any normal app and sign in.
+
+---
+
+## Set up in 3 steps
+
+### Step 1: Turn on Tally's "talk" switch (do this only once)
 
 1. Open Tally.
 2. Press the **F1** key on your keyboard.
-3. Click **Settings**, then **Connectivity**, then **Client/Server configuration**.
-4. Find *TallyPrime acts as* and choose **Both**.
-5. Find *Port* and make sure it says **9000**.
-6. Press **Ctrl+A** to save.
+3. Click **Settings**.
+4. Click **Connectivity**.
+5. Click **Client/Server configuration**.
+6. Where it says **TallyPrime acts as**, choose **Both**.
+7. Where it says **Port**, make sure it is **9000**.
+8. Press **Ctrl + A** to save.
 
-To check it worked, open any web browser and type `localhost:9000` in the address bar. If it says **"TallyPrime Server is Running"**, this step is done.
+**Quick check:** open Chrome or any browser and type `localhost:9000` at the top, then press Enter.
+If you see the words **"TallyPrime Server is Running"**, Step 1 is done. 🎉
 
-### Step 2. Download the connector
+### Step 2: Install the connector
 
-Go to the [Releases page](../../releases/latest) and click the file named **TallyPrime-Connector.mcpb**.
+1. Open your **Downloads** folder.
+2. Find the file **TallyPrime-Connector.mcpb** (the one you downloaded from the link at the top).
+3. **Double-click** it.
+4. Claude Desktop opens and shows an **Install** button. Click **Install**.
 
-### Step 3. Install it
+Done. You do not need to type anything or change any settings.
 
-Find the downloaded file, usually in your **Downloads** folder, and **double-click** it. Claude Desktop will open and show an **Install** button. Click it. That's it.
+### Step 3: Try it
 
-### Step 4. Try it
-
-Keep Tally open with your company loaded. Open Claude and type:
+1. Make sure Tally is open with your company loaded.
+2. Open Claude Desktop.
+3. Type this and press Enter:
 
 > Check the Tally connection.
 
-If Claude says it is connected, start asking your questions.
+If Claude says it is connected, you are ready. Start asking questions.
+
+---
 
 ## Things you can ask Claude
 
@@ -65,11 +87,25 @@ If Claude says it is connected, start asking your questions.
 - "Give me the trial balance."
 - "How much stock do I have and what is it worth?"
 - "List all the vouchers from 1 April to 30 April."
+- "Which customers owe me the most money?"
 
-## If something goes wrong
+You can ask in your own words. Claude understands.
 
-- **Claude says it cannot reach Tally.** Tally is closed, no company is loaded, or Step 1 was not saved. Open Tally, load a company, and check `localhost:9000` in your browser again.
-- **Claude gives an empty answer.** The company you have open simply has no data for that question.
+---
+
+## Something not working?
+
+**Claude says it cannot reach Tally.**
+One of these is the reason:
+- Tally is closed. Open it.
+- No company is loaded in Tally. Load your company.
+- Step 1 was not saved. Do Step 1 again and check `localhost:9000` in your browser.
+
+**Claude gives an empty answer.**
+Your company has no data for that question. Try a different question or date range.
+
+**Claude Desktop did not open when I double-clicked the file.**
+Install Claude Desktop first from [claude.ai/download](https://claude.ai/download), then double-click the file again.
 
 ---
 
