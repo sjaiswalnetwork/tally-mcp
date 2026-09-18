@@ -9,7 +9,7 @@ Free. Read-only. Your data never leaves your computer.
 
 ## 👉 Download here (one click)
 
-### [⬇️ Click to download TallyPrime-Connector.mcpb](https://github.com/sjaiswalnetwork/tally-mcp/releases/download/v1.0.0/TallyPrime-Connector.mcpb)
+### [⬇️ Click to download TallyPrime-Connector.mcpb](https://github.com/sjaiswalnetwork/tally-mcp/releases/latest/download/TallyPrime-Connector.mcpb)
 
 That is the only file you need. After it downloads, follow the 3 steps below.
 
