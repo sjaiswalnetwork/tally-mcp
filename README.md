@@ -68,6 +68,10 @@ If you see the words **"TallyPrime Server is Running"**, Step 1 is done. 🎉
 6. Find the file **TallyPrime-Connector.mcpb** in your **Downloads** folder and click **Open**.
 7. Click **Install**.
 
+You will see a **red warning box** saying the extension is not verified by Anthropic. This appears for every extension that is not from Claude's own store. It is normal. The connector is open source, you can read every line of it on this page. Click **Install** anyway.
+
+After it installs you should see a page with **"Enabled"** switched on and **"All requirements met"** in green. Close that window.
+
 Done. You do not need to type anything or change any settings.
 
 **Another way:** open the Extensions page in Claude Desktop and simply **drag the file** from your Downloads folder onto that page.
